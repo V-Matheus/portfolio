@@ -1,0 +1,27 @@
+body {
+  height: 6000px;
+}
+
+.header-menu {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--cor-1);
+  height: 80px;
+}
+
+.header-menu li a {
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-family: "Playfair Display SC";
+  color: var(--cor-2);
+  font-weight: 400;
+}
+
+.header-menu li a:hover {
+  font-size: large;
+  transition: 0.3s;
+}
