@@ -1,27 +1,45 @@
-body {
-  height: 6000px;
-}
-
 .header-menu {
   display: flex;
   position: fixed;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--cor-1);
   height: 80px;
 }
 
-.header-menu li a {
+#home {
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+.header-menu li{
   margin-right: 40px;
   text-transform: uppercase;
   font-family: "Playfair Display SC";
+  font-size: 12px;
   color: var(--cor-2);
   font-weight: 400;
 }
 
 .header-menu li a:hover {
-  font-size: large;
+  font-size: 16px;
   transition: 0.3s;
+}
+
+.lingua {
+  cursor: pointer;
+}
+
+.lingua::after {
+  content: '';
+  width: 20px;
+  height: 10px;
+  display: inline-block;
+  background: url(img/arrow-black.svg) no-repeat center center;
+}
+
+.header-links {
+  display: inherit;
 }
