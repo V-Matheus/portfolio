@@ -50,7 +50,7 @@
   text-align: center;
   font-size: 1rem;
   font-family: 'Oswald', sans-serif;;
-  font-weight: 400;
+  font-weight: 600;
   padding: 10px;
   border: 2px solid black;;
   border-radius: 4px;
@@ -58,6 +58,12 @@
   color: var(--cor-2);
   height: 20px;
   width: 100px;
+}
+
+#curriculo:hover {
+  background: var(--cor-2);
+  color: var(--cor-1);
+  transition: .3s;
 }
 
 #linkedin {
