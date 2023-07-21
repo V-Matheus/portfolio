@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   background: var(--cor-2);
   height: 80px;
-  box-shadow: 4px red;
+  box-shadow: 0px 2px 10px black;
 }
 
 #home {
