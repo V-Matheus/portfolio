@@ -30,7 +30,7 @@
 
 .lingua {
   cursor: pointer;
-}
+} 
 
 .lingua::after {
   content: '';
