@@ -1,12 +1,12 @@
 .header-menu {
   display: flex;
-  position: fixed;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--cor-1);
+  background: var(--cor-2);
   height: 80px;
+  box-shadow: 4px red;
 }
 
 #home {
@@ -19,7 +19,7 @@
   text-transform: uppercase;
   font-family: "Playfair Display SC";
   font-size: 12px;
-  color: var(--cor-2);
+  color: var(--cor-1);
   font-weight: 400;
 }
 
