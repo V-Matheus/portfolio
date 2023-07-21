@@ -1,5 +1,6 @@
 .header-menu {
   display: flex;
+  position: fixed;
   width: 100%;
   justify-content: space-between;
   align-items: center;

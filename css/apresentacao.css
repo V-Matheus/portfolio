@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   background: url(./img/bg-main-apresentacao.svg);
+  padding-top: 100px;
 }
 
 .apresentacao-conteudo {
