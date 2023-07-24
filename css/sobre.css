@@ -11,7 +11,7 @@
 
 .sobre-grid h1::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 50%;
   height: 3px;
   left: 50%;
@@ -28,7 +28,7 @@
 
 .sobre-container::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 2px;
   height: 100%;
   background: var(--cor-1);
@@ -103,7 +103,7 @@ ul li .data {
 }
 
 .sobre-container ul li .circle::after {
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-color: var(--cor-1);
@@ -124,6 +124,44 @@ ul li .data {
   transform: translate(-50%, -50%);
 }
 
-@media (max-width:1300px {
+@media (max-width: 1300px) {
+  .sobre-container {
+    width: 65%;
+  }
+}
 
-})
+@media (max-width: 900px) {
+  .sobre-container {
+    width: 60%;
+    transform: translate(15px);
+  }
+
+  .sobre-container::after {
+    left: -30px;
+  }
+
+  .sobre-container ul li {
+    width: 100%;
+    float: none;
+    clear: none;
+    margin-bottom: 80px;
+  }
+
+  .sobre-container ul li:nth-child(odd) {
+    transform: translate(0);
+    text-align: left;
+  }
+
+  .sobre-container ul li:nth-child(odd) .data {
+    left: 20px;
+  }
+
+  .sobre-container ul li:nth-child(odd) .circle {
+    left: -30px;
+    transform: translate(-50%, -50%);
+  }
+
+  .sobre-container ul li:nth-child(even) {
+    transform: translate(40px);
+  }
+}
