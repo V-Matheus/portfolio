@@ -76,7 +76,7 @@
 ul li p {
   font-size: 15px;
   color: #444;
-  margin: 7px 0;
+  margin: 25px 0;
   line-height: 23px;
 }
 
@@ -123,3 +123,7 @@ ul li .data {
   left: -30px;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width:1300px {
+
+})
