@@ -1,6 +1,6 @@
 .header-menu {
   display: flex;
-  position: relative;
+  position: fixed;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +8,7 @@
   background: var(--cor-2);
   height: 80px;
   box-shadow: 0px 2px 10px black;
+  z-index: 100;
 }
 
 #home {
@@ -15,18 +16,30 @@
   margin-left: 40px;
 }
 
-.header-menu li{
-  margin-right: 40px;
-  text-transform: uppercase;
-  font-family: "Playfair Display SC";
-  font-size: 12px;
+.header-menu li {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
   color: var(--cor-1);
-  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  transition: .5s ease;
 }
 
-.header-menu li a:hover {
-  font-size: 16px;
-  transition: 0.3s;
+.header-menu li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--cor-1);
+  transition: .5s ease;
+}
+
+.header-links li a:hover::before {
+  width: 100%;
 }
 
 .lingua {
