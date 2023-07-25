@@ -3,8 +3,8 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  background: url(./img/bg-main-apresentacao.svg);
-  padding-top: 100px;
+  background: url(./img/img-background/bg-main-apresentacao.svg);
+  padding: 60px;
 }
 
 .apresentacao-conteudo {

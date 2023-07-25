@@ -1,7 +1,13 @@
 .sobre-grid {
   display: grid;
   place-items: center;
-  margin-top: 60px;
+  padding-top: 60px;
+  background: rgb(219, 218, 213);
+  background: linear-gradient(
+    180deg,
+    rgba(219, 218, 213, 1) 0%,
+    rgba(98, 132, 192, 1) 100%
+  );
 }
 
 .sobre-h1 {
