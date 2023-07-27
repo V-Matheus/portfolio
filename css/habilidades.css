@@ -1,0 +1,86 @@
+#habilidades {
+  display: grid;
+  text-align: center;
+  overflow: hidden;
+  background: rgb(219, 218, 213);
+}
+
+#habilidades .h1 {
+  padding: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#habilidades .h1::after {
+  position: absolute;
+  content: "";
+  width: 6%;
+  height: 3px;
+  left: 47%;
+  bottom: 40px;
+  background-color: var(--cor-1);
+}
+
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.habilidades-grid h2 {
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.skills-container .card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin: 15px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+  border-radius: 15px;
+  background-color: var(--cor-2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  border-left: 1px solid rgba(255, 255, 255, .5);
+}
+
+.skills-container .card .content {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.skills-container .card:hover .content {
+  font-size: 12px;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.skills-container .card .content h1 {
+  position: relative;
+  font-size: 1.8em;
+  padding: 20px;
+  margin-bottom: 10px;
+  pointer-events: none;
+  color: var(--cor-1);
+}
+
+.skills-container .card .content p {
+  font-size: 1em;
+  font-weight: 300;
+}

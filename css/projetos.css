@@ -10,10 +10,6 @@
   );
 }
 
-.projetos-slide {
-  display: grid;
-  width: 100vw;
-}
 
 #projetos h1 {
   padding: 50px;
@@ -28,6 +24,11 @@
   left: 47%;
   bottom: 40px;
   background-color: var(--cor-2);
+}
+
+.projetos-slide {
+  display: grid;
+  width: 100vw;
 }
 
 .slide {
