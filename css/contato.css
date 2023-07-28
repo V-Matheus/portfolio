@@ -58,6 +58,19 @@
   padding: 10px;
   border-radius: 15px;
   color: var(--cor-2);
+  position: relative;
+  cursor: pointer;
+}
+
+.contato-mensagem button {
+  position: relative;
+  background: url('./img/img-icones/copy.svg') no-repeat center center;
+  height: 35px;
+  width: 35px;
+  padding: 10px;
+  right: 50px;
+  border: none;
+  cursor: pointer;
 }
 
 .contato-links {
