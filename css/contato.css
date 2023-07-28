@@ -1,0 +1,10 @@
+#contato {
+  display: grid;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contato-container {
+  display: inherit;
+  grid-template-columns: 1fr 1fr;
+}

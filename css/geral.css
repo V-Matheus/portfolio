@@ -32,3 +32,19 @@ img {
   display: block;
   border-radius: 15px;
 }
+
+.titulo {
+  padding: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.titulo::after {
+  position: absolute;
+  content: "";
+  width: 6%;
+  height: 3px;
+  left: 47%;
+  bottom: 40px;
+  background-color: var(--cor-1);
+}
