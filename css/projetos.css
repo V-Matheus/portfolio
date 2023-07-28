@@ -9,22 +9,6 @@
   );
 }
 
-
-#projetos h1 {
-  padding: 50px;
-  position: relative;
-}
-
-#projetos h1::after {
-  position: absolute;
-  content: "";
-  width: 6%;
-  height: 3px;
-  left: 47%;
-  bottom: 40px;
-  background-color: var(--cor-2);
-}
-
 .projetos-slide {
   display: grid;
   width: 100vw;

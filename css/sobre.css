@@ -10,22 +10,6 @@
   );
 }
 
-.sobre-h1 {
-  position: relative;
-  margin-bottom: 80px;
-}
-
-.sobre-grid h1::after {
-  position: absolute;
-  content: "";
-  width: 50%;
-  height: 3px;
-  left: 50%;
-  bottom: -5px;
-  background-color: var(--cor-1);
-  transform: translateX(-50%);
-}
-
 .sobre-container {
   width: 70%;
   height: auto;

@@ -2,9 +2,66 @@
   display: grid;
   text-align: center;
   overflow: hidden;
+  background: rgb(219, 218, 213);
+  background: linear-gradient(
+    180deg,
+    rgb(40, 53, 86) 40%,
+    rgb(30, 41, 74)
+  );
+  color: var(--cor-2);
 }
 
 .contato-container {
   display: inherit;
   grid-template-columns: 1fr 1fr;
+}
+
+.contato-texto {
+  display: inherit;
+  padding: 40px;
+  gap: 30px;
+}
+
+.contato-texto h1{
+  font-size: 4em;
+  text-align: start;
+}
+
+.contato-texto span{
+  font-size: 2em;
+  text-align: start;
+  color: #63B2BC;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.contato-mensagem {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.contato-mensagem img {
+  border-radius: 0;
+}
+
+.contato-mensagem h1 {
+  font-size: 2em;
+}
+
+.contato-mensagem input {
+  font-size: 1.5em;
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  color: var(--cor-2);
+}
+
+.contato-links {
+  display: flex;
+  flex-direction: row;
+  gap: 15px; 
 }

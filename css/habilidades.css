@@ -5,25 +5,10 @@
   background: rgb(219, 218, 213);
   background: linear-gradient(
     180deg,
-    rgba(98, 132, 192, 1) 60%,
+    rgba(98, 132, 192, 1),
     rgb(40, 53, 86)
   );
-}
-
-#habilidades .h1 {
-  padding: 50px;
-  margin-bottom: 50px;
-  position: relative;
-}
-
-#habilidades .h1::after {
-  position: absolute;
-  content: "";
-  width: 6%;
-  height: 3px;
-  left: 47%;
-  bottom: 40px;
-  background-color: var(--cor-2);
+  padding: 100px;
 }
 
 .habilidades-grid {
