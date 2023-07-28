@@ -2,7 +2,6 @@
   display: grid;
   text-align: center;
   overflow: hidden;
-  background: rgb(219, 218, 213);
   background: linear-gradient(
     180deg,
     rgba(98, 132, 192, 1) 100%,

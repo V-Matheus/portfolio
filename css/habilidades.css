@@ -3,6 +3,11 @@
   text-align: center;
   overflow: hidden;
   background: rgb(219, 218, 213);
+  background: linear-gradient(
+    180deg,
+    rgba(98, 132, 192, 1) 90%,
+    rgb(40, 53, 86)
+  );
 }
 
 #habilidades .h1 {
@@ -18,7 +23,7 @@
   height: 3px;
   left: 47%;
   bottom: 40px;
-  background-color: var(--cor-1);
+  background-color: var(--cor-2);
 }
 
 .habilidades-grid {
