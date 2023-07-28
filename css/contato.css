@@ -73,6 +73,12 @@
   cursor: pointer;
 }
 
+.contato-mensagem span {
+  position: relative;
+  font-size: 1.2em;
+  display: block;
+}
+
 .contato-links {
   display: flex;
   flex-direction: row;
