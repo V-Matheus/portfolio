@@ -66,5 +66,7 @@
   background: url(./img/img-icones/menu.svg) no-repeat center center;
   position: relative;
   top: 12px;
-  right: -20px;
+  left: -20px;
+  padding: 5px;
+  display: none;
 }
