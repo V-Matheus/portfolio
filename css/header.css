@@ -93,3 +93,15 @@
     top: 0;
   }
 }
+
+@media (max-width: 450px) {
+  #home {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  .header-menu li {
+    font-size: 14px;
+    padding: 1em 1em;
+  }
+}
