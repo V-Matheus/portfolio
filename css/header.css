@@ -57,3 +57,14 @@
 .header-links {
   display: inherit;
 }
+
+.header-links::after {
+  content: '';
+  width: 28px;
+  height: 28px;
+  display: block;
+  background: url(./img/img-icones/menu.svg) no-repeat center center;
+  position: relative;
+  top: 12px;
+  right: -20px;
+}
