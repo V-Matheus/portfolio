@@ -38,9 +38,9 @@
   color: var(--cor-1);
   border-right: 4px solid;
   white-space: nowrap;
-  width: 15ch;
+  width: 14ch;
   overflow: hidden;
-  animation: typing 2s steps(15), blinking 0.5s infinite step-end alternate;
+  animation: typing 2s steps(14), blinking 0.5s infinite step-end alternate;  
 }
 
 @keyframes typing {
