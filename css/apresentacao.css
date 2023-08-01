@@ -95,3 +95,13 @@
   border: 2px solid black;
   border-radius: 4px;
 }
+
+@media (max-width: 1100px) {
+  .apresentacao-texto {
+    gap: 10px;
+  }
+
+  .apresentacao-texto span{
+    font-size: 1.2em;
+  }
+}
