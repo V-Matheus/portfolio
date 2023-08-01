@@ -121,6 +121,9 @@ ul li .data {
 }
 
 @media (max-width: 900px) {
+  .sobre-grid {
+    padding-top: 20px;
+  }
   .sobre-container {
     width: 60%;
     transform: translate(15px);
