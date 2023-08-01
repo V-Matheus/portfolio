@@ -155,3 +155,9 @@ ul li .data {
     transform: translate(40px);
   }
 }
+
+@media (max-width: 400px) {
+  .sobre-container ul li p {
+    font-size: 12px;
+  }
+}
