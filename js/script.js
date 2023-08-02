@@ -7,3 +7,8 @@ import MenuMobile from './modules/menu-mobile.js';
 
 const menuMobile = new MenuMobile('[data-menu="button"]', '.header-links');
 menuMobile.init();
+
+import ScrollAnima from './modules/scroll-anima.js';
+
+const scrollAnima = new ScrollAnima("[data-anime='scroll']");
+scrollAnima.init();

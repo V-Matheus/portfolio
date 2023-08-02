@@ -98,6 +98,17 @@
   border-radius: 4px;
 }
 
+[data-anime="scroll"]  {
+  opacity: 0;
+  transform: translate3d(0, -300px, 0);
+}
+
+[data-anime="scroll"].ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 1s;
+}
+
 @media (max-width: 1100px) {
   .apresentacao-texto {
     gap: 10px;

@@ -94,6 +94,17 @@
   }
 }
 
+.header-links[data-anime="scroll"]  {
+  opacity: 0;
+  transform: translate3d(50px, 0, 0);
+}
+
+.header-links[data-anime="scroll"].ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 1s;
+}
+
 @media (max-width: 450px) {
   #home {
     font-size: 12px;
