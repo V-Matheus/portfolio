@@ -30,5 +30,3 @@ export default class ScrollSuave {
     return this;
   }
 }
-
-console.log('salve');
