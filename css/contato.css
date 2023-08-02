@@ -74,10 +74,16 @@
   cursor: pointer;
 }
 
-.contato-mensagem span {
+.contato-email {
   position: relative;
+}
+
+.contato-mensagem span {
+  position: absolute;
   font-size: 1.2em;
   display: inline-block;
+  right: -60px;
+  bottom: 26px;
 }
 
 .contato-links {
