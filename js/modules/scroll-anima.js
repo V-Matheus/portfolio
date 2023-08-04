@@ -4,7 +4,6 @@ export default class ScrollAnima {
   constructor(anima) {
     this.anima = document.querySelectorAll(anima);
     this.windowMetade = window.innerHeight * 0.7;
-
     this.checkDistance = debounce(this.checkDistance.bind(this), 50);
   }
 
@@ -12,10 +11,10 @@ export default class ScrollAnima {
   // em relação ao top do site
   getDistance() {
     this.distance = [...this.anima].map((section) => {
-      const offset = section.offsetTop;
+      const { top } = section.getBoundingClientRect();
       return {
         element: section,
-        offset: Math.floor(offset - this.windowMetade),
+        offset: Math.floor(top - this.windowMetade),
       };
     });
   }
@@ -36,6 +35,7 @@ export default class ScrollAnima {
     if (this.anima.length) {
       this.getDistance();
       this.checkDistance();
+      this.stop();
       window.addEventListener('scroll', this.checkDistance);
     }
     return this;
