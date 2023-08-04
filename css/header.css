@@ -74,6 +74,24 @@
   background: url(./img/img-icones/x.svg) no-repeat center center;
 }
 
+.header-links  {
+  opacity: 0;
+  transform: translate3d(50px, 0, 0);
+  animation: moveLeft 1.5s forwards;
+}
+
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1100px) {
   .button {
     display: flex;
@@ -92,17 +110,6 @@
     box-shadow: 3px 2px 2px 0 rgba(0, 0, 0, 0.5);
     top: 0;
   }
-}
-
-.header-links[data-anime="scroll"]  {
-  opacity: 0;
-  transform: translate3d(50px, 0, 0);
-}
-
-.header-links[data-anime="scroll"].ativo {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: 1s;
 }
 
 @media (max-width: 450px) {
