@@ -42,6 +42,11 @@
   width: 100%;
 }
 
+.header-menu li.ativo a::before,
+.header-menu li a:hover::before {
+  width: 100%;
+}
+
 .lingua {
   cursor: pointer;
 }

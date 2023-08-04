@@ -12,3 +12,8 @@ import ScrollAnima from './modules/scroll-anima.js';
 
 const scrollAnima = new ScrollAnima("[data-anime='scroll']");
 scrollAnima.init();
+
+import HeaderClick from './modules/headerClick.js';
+
+const headerClick = new HeaderClick('.header-links li');
+headerClick.init();

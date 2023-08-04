@@ -1,16 +1,25 @@
 export default class HeaderClick {
   constructor(menuHeader) {
-   this.menuHeader = document.querySelector(menuHeader)
+   this.menuHeader = document.querySelectorAll(menuHeader)
   } 
 
   ativaHeader() {
-    this.menuHeader.addEventListener('click', () => {
-      console.log(this);
+    this.menuHeader.forEach(item => {
+      item.addEventListener('click', () => {
+        this.desativarItens();
+        item.classList.add('ativo');
+      });
+    });
+  }
+
+  desativarItens() {
+    this.menuHeader.forEach(item => {
+      item.classList.remove('ativo');
     });
   }
 
   init() {
-    ativaHeader();
+    this.ativaHeader();
     return this;
   }
 }
