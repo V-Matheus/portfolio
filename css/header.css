@@ -60,6 +60,11 @@
   animation: moveLeft 1.5s forwards;
 }
 
+.header-links .ativo{
+  opacity: 1;
+  animation: moveLeft .5s forwards;
+}
+
 @keyframes moveLeft {
   from {
     transform: translateX(100px);
