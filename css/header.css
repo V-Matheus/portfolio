@@ -56,6 +56,19 @@
 
 .header-links {
   display: flex;
+  opacity: 0;
+  animation: moveLeft 1.5s forwards;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .button {
@@ -72,24 +85,6 @@
 
 .button.ativo {
   background: url(./img/img-icones/x.svg) no-repeat center center;
-}
-
-.header-links  {
-  opacity: 0;
-  transform: translate3d(50px, 0, 0);
-  animation: moveLeft 1.5s forwards;
-}
-
-
-@keyframes moveLeft {
-  from {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 @media (max-width: 1100px) {
