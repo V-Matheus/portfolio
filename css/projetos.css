@@ -13,6 +13,7 @@
 .projetos-slide {
   display: grid;
   width: 100vw;
+  position: relative;
 }
 
 .slide {
@@ -43,7 +44,8 @@
 .arrow-nav {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
+  margin: 40px 0;
+  position: relative;
 }
 
 .arrow-nav button {
@@ -57,4 +59,25 @@
 
 .arrow-nav button.prev {
   transform: rotate(-180deg);
+}
+
+[data-control='slide'] {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+[data-control='slide'] li {
+  background-color: var(--cor-2);
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+[data-control='slide'] li.active {
+  background-color: var(--cor-1);
 }

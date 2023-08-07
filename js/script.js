@@ -23,3 +23,4 @@ import SlideNav from "./modules/slide.js";
 const slide = new SlideNav('.slide', '.projetos-slide');
 slide.init();
 slide.addControl('.custom-controls');
+slide.addArrow('.prev', '.next')

@@ -174,14 +174,13 @@ export default class SlideNav extends Slide {
 
   createControl() {
     const control = document.createElement('ul');
+    const arrowNav = document.querySelector('.arrow-nav')
     control.dataset.control = 'slide';
 
     this.slideArray.forEach((item, index) => {
-      control.innerHTML += `<li><a href='#slide${index + 1}'>${
-        index + 1
-      }</a></li>`;
+      control.innerHTML += `<li><a href='#slide${index + 1}'></a></li>`;
     });
-    this.wrapper.appendChild(control);
+    arrowNav.appendChild(control);
     return control;
   }
 
