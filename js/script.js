@@ -17,3 +17,9 @@ import HeaderClick from './modules/headerClick.js';
 
 const headerClick = new HeaderClick('.header-links li');
 headerClick.init();
+
+import SlideNav from "./modules/slide.js";
+
+const slide = new SlideNav('.slide', '.projetos-slide');
+slide.init();
+slide.addControl('.custom-controls');
