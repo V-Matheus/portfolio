@@ -80,3 +80,34 @@
 [data-control='slide'] li.active {
   background-color: var(--cor-1);
 }
+
+.projetos-hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, .9);
+  border-radius: 10px;
+
+  position: absolute; /* Posição absoluta para sobrepor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--cor-2);
+}
+
+.projetos-tech {
+  display: flex;
+  gap: 30px;
+}
+
+.projetos-tech-icon {
+  display: flex;
+}
+
+
+.projetos-tech-icon img{
+  width: 40px;
+}
