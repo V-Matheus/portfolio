@@ -42,7 +42,6 @@
   width: 100%;
 }
 
-.header-menu li.ativo a::before,
 .header-menu li a:hover::before {
   width: 100%;
 }
