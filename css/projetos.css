@@ -85,7 +85,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
   background-color: rgba(0, 0, 0, .9);
   border-radius: 10px;
@@ -98,9 +97,38 @@
   color: var(--cor-2);
 }
 
+.projetos-hover h1 {
+  font-size: 2rem;
+  padding: 40px 0;
+  color: var(--cor-2);
+}
+
+.projetos-hover p{
+  width: 60ch;
+}
+
+.facil {
+  color: #A9C65A;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.medio {
+  color: #EEEE00;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.dificil {
+  color: #C82228;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
 .projetos-tech {
   display: flex;
   gap: 30px;
+  padding-bottom: 20px;
 }
 
 .projetos-tech-icon {
@@ -110,4 +138,16 @@
 
 .projetos-tech-icon img{
   width: 40px;
+}
+
+.projetos-links {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.projetos-links a{
+  background-color: var(--cor-1);
+  padding: 10px;
+  border-radius: 5px;
 }
