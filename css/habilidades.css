@@ -84,18 +84,6 @@
   font-weight: 300;
 }
 
-.ler-mais {
-  padding: 10px;
-  border-radius: 10px;
-  width: 80px;
-  margin-top: 100px;
-  background-color: var(--cor-1);
-  color: var(--cor-2);
-  display: none;
-  cursor: pointer;
-  z-index: 999999;
-}
-
 .habilidades-atuais .skills-container .card:nth-child(1)::before {
   background: url(./img/img-skills/html.svg) no-repeat center center;
 }
@@ -154,16 +142,6 @@
   .skills-container .card:hover::before {
     opacity: 1;
     transform: translateY(0px);
-  }
-
-  .ler-mais {
-    display: block;
-    transform: translateY(100px);
-  }
-
-  .skills-container .card:hover .ler-mais {
-    transform: translateY(0px);
-    transition: .3s;
   }
 }
 
