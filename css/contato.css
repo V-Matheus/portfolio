@@ -3,11 +3,7 @@
   text-align: center;
   overflow: hidden;
   background: rgb(219, 218, 213);
-  background: linear-gradient(
-    180deg,
-    rgb(40, 53, 86) 40%,
-    rgb(30, 41, 74)
-  );
+  background: linear-gradient(180deg, rgb(40, 53, 86) 40%, rgb(30, 41, 74));
   color: var(--cor-2);
 }
 
@@ -23,15 +19,15 @@
   gap: 30px;
 }
 
-.contato-texto h1{
+.contato-texto h1 {
   font-size: 4em;
   text-align: start;
 }
 
-.contato-texto span{
+.contato-texto span {
   font-size: 2em;
   text-align: start;
-  color: #63B2BC;
+  color: #63b2bc;
   font-weight: bold;
   margin-left: 10px;
 }
@@ -65,7 +61,7 @@
 
 .contato-mensagem button {
   position: absolute;
-  background: url('./img/img-icones/copy.svg') no-repeat center center;
+  background: url("./img/img-icones/copy.svg") no-repeat center center;
   height: 35px;
   width: 35px;
   padding: 10px;
@@ -85,15 +81,21 @@
 .contato-mensagem span {
   font-size: 1.2em;
   display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contato-mensagem span.active {
+  opacity: 1;
 }
 
 .contato-links {
   display: flex;
   flex-direction: row;
-  gap: 15px; 
+  gap: 15px;
 }
 
-@media (max-width:1100px) {
+@media (max-width: 1100px) {
   .contato-texto {
     padding: 20px;
   }
@@ -104,7 +106,6 @@
 
   .contato-texto span {
     font-size: 1.5em;
- 
   }
 
   .contato-mensagem h1 {
@@ -122,14 +123,15 @@
   }
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   .contato-container {
     grid-template-columns: 1fr;
     gap: 50px;
     padding-bottom: 50px;
   }
 
-  .contato-texto span, .contato-texto h1 {
+  .contato-texto span,
+  .contato-texto h1 {
     text-align: center;
   }
 
