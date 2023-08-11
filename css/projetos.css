@@ -100,8 +100,7 @@
   height: 100%;
   color: var(--cor-2);
   backdrop-filter: blur(5px);
-  display: none;
-  opacity: 0;
+
 }
 
 .slide li.active .projetos-hover:hover{
@@ -161,4 +160,54 @@
   background-color: var(--cor-1);
   padding: 10px;
   border-radius: 5px;
+}
+
+@media (max-width:1200px) {
+  .projetos-hover {
+    gap: 10px;
+  }
+  .projetos-hover h1{
+   padding: 20px 0;
+   font-size: 1.2rem;
+  }
+  .projetos-tech {
+    padding-bottom: 0px;
+  }
+  .projetos-hover p {
+    width: 50ch;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:800px) {
+  .projetos-hover p {
+   display: none;
+  }
+
+  .projetos-tech {
+    flex-direction: column;
+    gap: 10px ;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projetos-hover h1{
+    padding: 5px 0;
+    font-size: .8rem;
+   }
+
+   .projetos-links a {
+    padding: 5px;
+   }
+}
+
+@media (max-width:560px) {
+  .projetos-tech {
+    display: none;
+  }
+
+  .projetos-links {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
