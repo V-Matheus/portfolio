@@ -40,7 +40,7 @@
   color: var(--cor-1);
   border-right: 4px solid;
   white-space: nowrap;
-  width: 14ch;
+  width: 12ch;
   overflow: hidden;
   animation: typing 2s steps(14), blinking 0.5s infinite step-end alternate;
 }
