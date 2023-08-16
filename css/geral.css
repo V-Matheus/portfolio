@@ -37,7 +37,7 @@ img {
   padding: 50px;
   margin-bottom: 50px;
   position: relative;
-  font-family: 'Source Sans 3';
+  font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
 }
 
