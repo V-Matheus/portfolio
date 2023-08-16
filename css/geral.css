@@ -37,6 +37,8 @@ img {
   padding: 50px;
   margin-bottom: 50px;
   position: relative;
+  font-family: 'Source Sans 3';
+  font-weight: 600;
 }
 
 .titulo::after {
