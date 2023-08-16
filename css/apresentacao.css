@@ -22,6 +22,7 @@
   background: rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .apresentacao-texto p {
@@ -38,7 +39,7 @@
   color: var(--cor-1);
   border-right: 4px solid;
   white-space: nowrap;
-  width: 14ch;
+  width: 100%;
   overflow: hidden;
   animation: typing 2s steps(14), blinking 0.5s infinite step-end alternate;
 }
