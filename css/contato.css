@@ -22,6 +22,8 @@
 .contato-texto h1 {
   font-size: 4em;
   text-align: start;
+  font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
 }
 
 .contato-texto span {
@@ -30,6 +32,8 @@
   color: #63b2bc;
   font-weight: bold;
   margin-left: 10px;
+  font-weight: 300;
+  font-family: 'Noto Sans Georgian', 'Georgia', serif;
 }
 
 .contato-mensagem {
@@ -46,10 +50,14 @@
 
 .contato-mensagem h1 {
   font-size: 2em;
+  font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
 }
 
 .contato-mensagem input {
   font-size: 1.5em;
+  font-weight: 300;
+  font-family: 'Noto Sans Georgian', 'Georgia', serif;
   width: 400px;
   height: 50px;
   padding: 10px;
@@ -97,7 +105,7 @@
 
 @media (max-width: 1100px) {
   .contato-texto {
-    padding: 20px;
+    padding: 40px;
   }
 
   .contato-texto h1 {
