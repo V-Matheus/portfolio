@@ -83,7 +83,7 @@
 
 .slide li:hover .projetos-hover {
   display: flex;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .projetos-hover {
@@ -103,13 +103,15 @@
   opacity: 0;
 }
 
-.slide li.active .projetos-hover:hover{
+.slide li.active .projetos-hover:hover {
   display: flex;
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .projetos-hover h1 {
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
   font-size: 2rem;
   padding: 40px 0;
   color: var(--cor-2);
@@ -117,6 +119,7 @@
 
 .projetos-hover p {
   width: 60ch;
+  font-family: "Noto Sans Georgian", "Georgia", serif;
 }
 
 .facil {
@@ -161,15 +164,17 @@
   background-color: var(--cor-1);
   padding: 10px;
   border-radius: 5px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .projetos-hover {
     gap: 10px;
   }
-  .projetos-hover h1{
-   padding: 20px 0;
-   font-size: 1.2rem;
+  .projetos-hover h1 {
+    padding: 20px 0;
+    font-size: 1.2rem;
   }
   .projetos-tech {
     padding-bottom: 0px;
@@ -180,29 +185,29 @@
   }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .projetos-hover p {
-   display: none;
+    display: none;
   }
 
   .projetos-tech {
     flex-direction: column;
-    gap: 10px ;
+    gap: 10px;
     justify-content: center;
     align-items: center;
   }
 
-  .projetos-hover h1{
+  .projetos-hover h1 {
     padding: 5px 0;
-    font-size: .8rem;
-   }
+    font-size: 0.8rem;
+  }
 
-   .projetos-links a {
+  .projetos-links a {
     padding: 5px;
-   }
+  }
 }
 
-@media (max-width:560px) {
+@media (max-width: 560px) {
   .projetos-tech {
     display: none;
   }
@@ -233,7 +238,5 @@
 
   .arrow-nav {
     margin: 60px 0;
-
   }
- 
 }
