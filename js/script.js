@@ -28,3 +28,6 @@ slide.addArrow(".prev", ".next");
 import Copy from "./modules/copy.js";
 
 const copy = new Copy(".button-copy", ".copy", '#email');
+
+const html = document.querySelector('html')
+html.classList.add('js')
