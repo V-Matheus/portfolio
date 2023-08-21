@@ -34,15 +34,27 @@
   margin-bottom: 30px;
   z-index: 99;
   position: relative;
+  opacity: 1;
+}
+
+.js .sobre-container li {
   opacity: 0;
 }
 
-.sobre-container li:nth-child(odd)[data-anime="scroll"] {
+.js .sobre-container li:nth-child(odd)[data-anime="scroll"] {
   float: left;
   clear: right;
   transform: translateX(-60px);
   text-align: right;
 }
+
+.sobre-container li:nth-child(odd)[data-anime="scroll"] {
+  float: left;
+  clear: right;
+  transform: translateX(-30px);
+  text-align: right;
+}
+
 
 .sobre-container li:nth-child(odd)[data-anime="scroll"].ativo {
   opacity: 1;
@@ -50,11 +62,18 @@
   transform: translateX(-30px);
 }
 
-.sobre-container li:nth-child(even)[data-anime="scroll"] {
+.js .sobre-container li:nth-child(even)[data-anime="scroll"] {
   float: right;
   clear: left;
   transform: translateX(140px);
   visibility: hidden;
+}
+
+.sobre-container li:nth-child(even)[data-anime="scroll"] {
+  float: right;
+  clear: left;
+  transform: translateX(110px);
+  visibility: visible;
 }
 
 .sobre-container li:nth-child(even)[data-anime="scroll"].ativo {
