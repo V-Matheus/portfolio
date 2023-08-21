@@ -97,34 +97,34 @@
   border-radius: 4px;
 }
 
-#linkedin[data-anime="scroll"]  {
+.js #linkedin[data-anime="scroll"]  {
   opacity: 0;
   transform: translate3d(0, -300px, 0);
 }
 
-#linkedin[data-anime="scroll"].ativo {
+.js #linkedin[data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition: 1s;
 }
 
-#github[data-anime="scroll"]  {
+.js #github[data-anime="scroll"]  {
   opacity: 0;
   transform: translate3d(0, -300px, 0);
 }
 
-#github[data-anime="scroll"].ativo {
+.js #github[data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition: 1.5s;
 }
 
-#curriculo[data-anime="scroll"]  {
+.js #curriculo[data-anime="scroll"]  {
   opacity: 0;
   transform: translate3d(0, -300px, 0);
 }
 
-#curriculo[data-anime="scroll"].ativo {
+.js #curriculo[data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition: .6s;
