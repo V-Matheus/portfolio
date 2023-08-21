@@ -125,10 +125,6 @@
   background: url(./img/img-skills/angularjs.svg) no-repeat center center;
 }
 
-.habilidades-futuras .card:nth-child(4)::before{
-  background: url(./img/img-skills/wordpress.svg) no-repeat center center;
-}
-
 @media (max-width: 1200px) {
   #habilidades {
     padding: 60px;
