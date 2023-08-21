@@ -18,14 +18,23 @@
 
 .slide {
   display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.js .slide {
+  display: flex;
   width: 300%;
+  flex-direction: row;
+  gap: 0px; 
 }
 
 .slide:hover {
   will-change: transform;
 }
 
-.slide li {
+.js .slide li {
   width: 50vw;
   max-height: 600px;
   margin: 0 60px;
@@ -36,17 +45,21 @@
   transition: 0.4s;
 }
 
-.slide li.active {
+.js .slide li.active {
   opacity: 1;
   transform: scale(1);
 }
 
-.arrow-nav {
+.js .arrow-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 40px 0;
   position: relative;
+}
+
+.arrow-nav {
+  display: none;
 }
 
 .arrow-nav button {

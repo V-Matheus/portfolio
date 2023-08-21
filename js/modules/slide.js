@@ -151,6 +151,10 @@ export class Slide {
     this.slidesConfig();
     this.addResizeEvent();
     this.changeSlide(0);
+
+    this.moveSlide(this.slideArray[0].position);
+    const resizeEvent = new Event('resize');
+    window.dispatchEvent(resizeEvent);
     return this;
   }
 }
