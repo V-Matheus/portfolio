@@ -20,14 +20,16 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 50px;
+  gap: 100px;
+  margin-bottom: 50px;
+  align-items: center;
 }
 
 .js .slide {
   display: flex;
   width: 300%;
   flex-direction: row;
-  gap: 0px; 
+  gap: 0px;
 }
 
 .slide:hover {
@@ -43,6 +45,15 @@
   opacity: 0.8;
   transform: scale(0.8);
   transition: 0.4s;
+}
+
+.slide li {
+  width: 50vw;
+  max-height: 600px;
+  margin: 0 60px;
+  border-radius: 15px;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .js .slide li.active {
@@ -90,12 +101,18 @@
   cursor: pointer;
 }
 
-[data-control="slide"] li.active {
+.js [data-control="slide"] li.active {
   background-color: var(--cor-1);
 }
 
 .slide li:hover .projetos-hover {
   display: flex;
+  transition: 0.5s;
+}
+
+.js .slide li.active .projetos-hover:hover {
+  display: flex;
+  opacity: 1;
   transition: 0.5s;
 }
 
@@ -113,14 +130,14 @@
   color: var(--cor-2);
   backdrop-filter: blur(5px);
   display: none;
-  opacity: 0;
+  transition: opacity 0.5s; 
+  opacity: 1;
 }
 
-.slide li.active .projetos-hover:hover {
-  display: flex;
-  opacity: 1;
-  transition: 0.5s;
+.js .projetos-hover {
+  opacity: 0  ;
 }
+
 
 .projetos-hover h1 {
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
