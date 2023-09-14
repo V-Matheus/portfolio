@@ -1,34 +1,43 @@
 #projetos {
+/*Display stuff*/
   display: grid;
-  text-align: center;
-  overflow: hidden;
+/*Box model stuff*/
   padding-top: 60px;
-  background: linear-gradient(
-    180deg,
-    rgba(98, 132, 192, 1) 100%,
-    rgba(219, 218, 213, 1) 0%
-  );
+  background: linear-gradient(    180deg,    rgba(98, 132, 192, 1) 100%,    rgba(219, 218, 213, 1) 0%  );
+/*Typography stuff*/
+  text-align: center;
+/*Miscellaneous*/
+  overflow: hidden;
 }
 
 .projetos-slide {
+/*Display stuff*/
   display: grid;
-  width: 100vw;
+/*Positioning stuff*/
   position: relative;
+/*Box model stuff*/
+  width: 100vw;
 }
 
 .slide {
+/*Display stuff*/
   display: flex;
-  width: 100%;
   flex-direction: column;
-  gap: 100px;
-  margin-bottom: 50px;
   align-items: center;
+/*Box model stuff*/
+  width: 100%;
+  margin-bottom: 50px;
+/*Miscellaneous*/
+  gap: 100px;
 }
 
 .js .slide {
+/*Display stuff*/
   display: flex;
-  width: 300%;
   flex-direction: row;
+/*Box model stuff*/
+  width: 300%;
+/*Miscellaneous*/
   gap: 0px;
 }
 
@@ -37,23 +46,26 @@
 }
 
 .js .slide li {
+/*Box model stuff*/
   width: 50vw;
   max-height: 600px;
   margin: 0 60px;
-
   border-radius: 15px;
-  opacity: 0.8;
+/*Manipulations stuff*/
   transform: scale(0.8);
   transition: 0.4s;
+  opacity: 0.8;
 }
 
 .slide li {
+/*Box model stuff*/
   width: 50vw;
   max-height: 600px;
   margin: 0 60px;
   border-radius: 15px;
-  opacity: 1;
+/*Manipulations stuff*/
   transform: scale(1);
+  opacity: 1;
 }
 
 .js .slide li.active {
@@ -62,11 +74,14 @@
 }
 
 .js .arrow-nav {
+/*Display stuff*/
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin: 40px 0;
+  justify-content: space-around;
+/*Positioning stuff*/
   position: relative;
+/*Box model stuff*/
+  margin: 40px 0;
 }
 
 .arrow-nav {
@@ -74,12 +89,14 @@
 }
 
 .arrow-nav button {
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
+/*Box model stuff*/
   width: 40px;
   height: 40px;
+  border: none;
+  border-radius: 4px;
   background: var(--cor-1) url("./img/img-projetos/arrow.svg") center no-repeat;
+/*Miscellaneous*/
+  cursor: pointer;
 }
 
 .arrow-nav button.prev {
@@ -93,11 +110,13 @@
 }
 
 [data-control="slide"] li {
-  background-color: var(--cor-2);
+/*Box model stuff*/
   width: 10px;
   height: 10px;
   padding: 5px;
   border-radius: 50%;
+  background-color: var(--cor-2);
+/*Miscellaneous*/
   cursor: pointer;
 }
 
@@ -111,27 +130,35 @@
 }
 
 .js .slide li.active .projetos-hover:hover {
+/*Display stuff*/
   display: flex;
-  opacity: 1;
+/*Manipulations stuff*/
   transition: 0.5s;
+  opacity: 1;
 }
 
 .projetos-hover {
+/*Display stuff*/
+  display: none;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 15px;
+/*Positioning stuff*/
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
+/*Box model stuff*/
   width: 100%;
   height: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+/*Typography stuff*/
   color: var(--cor-2);
-  backdrop-filter: blur(5px);
-  display: none;
+/*Manipulations stuff*/
   transition: opacity 0.5s; 
   opacity: 1;
+/*Miscellaneous*/
+  gap: 20px;
+  backdrop-filter: blur(5px);
 }
 
 .js .projetos-hover {
@@ -140,10 +167,12 @@
 
 
 .projetos-hover h1 {
-  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+/*Box model stuff*/
   padding: 40px 0;
+/*Typography stuff*/
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
   color: var(--cor-2);
 }
 
@@ -153,27 +182,33 @@
 }
 
 .facil {
-  color: #a9c65a;
-  font-weight: 900;
+/*Typography stuff*/
   font-size: 1.2rem;
+  font-weight: 900;
+  color: #a9c65a;
 }
 
 .medio {
-  color: #eeee00;
-  font-weight: 900;
+/*Typography stuff*/
   font-size: 1.2rem;
+  font-weight: 900;
+  color: #eeee00;
 }
 
 .dificil {
-  color: #c82228;
-  font-weight: 900;
+/*Typography stuff*/
   font-size: 1.2rem;
+  font-weight: 900;
+  color: #c82228;
 }
 
 .projetos-tech {
+/*Display stuff*/
   display: flex;
-  gap: 30px;
+/*Box model stuff*/
   padding-bottom: 20px;
+/*Miscellaneous*/
+  gap: 30px;
 }
 
 .projetos-tech-icon {
@@ -185,15 +220,20 @@
 }
 
 .projetos-links {
+/*Display stuff*/
   display: flex;
-  gap: 20px;
+/*Box model stuff*/
   padding-bottom: 20px;
+/*Miscellaneous*/
+  gap: 20px;
 }
 
 .projetos-links a {
-  background-color: var(--cor-1);
+/*Box model stuff*/
   padding: 10px;
   border-radius: 5px;
+  background-color: var(--cor-1);
+/*Typography stuff*/
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 600;
 }
