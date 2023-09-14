@@ -1,14 +1,18 @@
 .header-menu {
+/*Display stuff*/
   display: flex;
-  position: fixed;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  background: var(--cor-2);
-  height: 80px;
-  box-shadow: 0px 2px 10px black;
+  align-items: center;
+  justify-content: space-between;
+/*Positioning stuff*/
+  position: fixed;
   z-index: 100;
+/*Box model stuff*/
+  width: 100%;
+  height: 80px;
+  background: var(--cor-2);
+/*Miscellaneous*/
+  box-shadow: 0px 2px 10px black;
 }
 
 #home {
@@ -17,24 +21,32 @@
 }
 
 .header-menu li {
-  font-size: 17px;
-  background: transparent;
-  border: none;
-  padding: 1em 1.5em;
-  color: var(--cor-1);
-  text-transform: uppercase;
+/*Positioning stuff*/
   position: relative;
+/*Box model stuff*/
+  padding: 1em 1.5em;
+  border: none;
+  background: transparent;
+/*Typography stuff*/
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--cor-1);
+/*Manipulations stuff*/
   transition: 0.5s ease;
 }
 
 .header-menu li a::before {
+/*Display stuff*/
   content: "";
+/*Positioning stuff*/
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+/*Box model stuff*/
   width: 0;
+  height: 2px;
   background-color: var(--cor-1);
+/*Manipulations stuff*/
   transition: 0.5s ease;
 }
 
@@ -51,17 +63,21 @@
 }
 
 .lingua::after {
+/*Display stuff*/
   content: "";
+  display: inline-block;
+/*Box model stuff*/
   width: 20px;
   height: 10px;
-  display: inline-block;
   background: url(img/img-icones/arrow-black.svg) no-repeat center center;
 }
 
 .header-links {
+/*Display stuff*/
   display: flex;
-  opacity: 0;
+/*Manipulations stuff*/
   animation: moveLeft 1.5s forwards;
+  opacity: 0;
 }
 
 .header-links .ativo{
@@ -81,15 +97,19 @@
 }
 
 .button {
+/*Display stuff*/
   content: "";
+  display: none;
+/*Positioning stuff*/
+  position: relative;
+/*Box model stuff*/
   width: 28px;
   height: 28px;
-  background: url(./img/img-icones/menu.svg) no-repeat center center;
-  position: relative;
   margin: 10px;
   border: none;
+  background: url(./img/img-icones/menu.svg) no-repeat center center;
+/*Miscellaneous*/
   cursor: pointer;
-  display: none;
 }
 
 .button.ativo {
