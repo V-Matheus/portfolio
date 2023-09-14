@@ -1,47 +1,62 @@
 #contato {
+/*Display stuff*/
   display: grid;
-  text-align: center;
-  overflow: hidden;
-  background: rgb(219, 218, 213);
+/*Box model stuff*/
   background: linear-gradient(180deg, rgb(40, 53, 86) 40%, rgb(30, 41, 74));
+  background: rgb(219, 218, 213);
+/*Typography stuff*/
+  text-align: center;
   color: var(--cor-2);
+/*Miscellaneous*/
+  overflow: hidden;
 }
 
 .contato-container {
+/*Display stuff*/
   display: inherit;
   grid-template-columns: 1fr 1fr;
+/*Box model stuff*/
   padding-bottom: 100px;
 }
 
 .contato-texto {
+/*Display stuff*/
   display: inherit;
+/*Box model stuff*/
   padding: 40px;
+/*Miscellaneous*/
   gap: 30px;
 }
 
 .contato-texto h1 {
-  font-size: 4em;
-  text-align: start;
+/*Typography stuff*/
   font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 4em;
   font-weight: 600;
+  text-align: start;
 }
 
 .contato-texto span {
+/*Box model stuff*/
+  margin-left: 10px;
+/*Typography stuff*/
+  font-family: 'Noto Sans Georgian', 'Georgia', serif;
   font-size: 2em;
+  font-weight: bold;
+  font-weight: 300;
   text-align: start;
   color: #63b2bc;
-  font-weight: bold;
-  margin-left: 10px;
-  font-weight: 300;
-  font-family: 'Noto Sans Georgian', 'Georgia', serif;
 }
 
 .contato-mensagem {
-  margin-top: 40px;
+/*Display stuff*/
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: center;
+/*Box model stuff*/
+  margin-top: 40px;
+/*Miscellaneous*/
+  gap: 30px;
 }
 
 .contato-mensagem img {
@@ -49,48 +64,62 @@
 }
 
 .contato-mensagem h1 {
-  font-size: 2em;
+/*Typography stuff*/
   font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2em;
   font-weight: 600;
 }
 
 .contato-mensagem input {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-family: 'Noto Sans Georgian', 'Georgia', serif;
+/*Positioning stuff*/
+  position: relative;
+/*Box model stuff*/
   width: 400px;
   height: 50px;
   padding: 10px;
   border-radius: 15px;
+/*Typography stuff*/
+  font-family: 'Noto Sans Georgian', 'Georgia', serif;
+  font-size: 1.5em;
+  font-weight: 300;
   color: var(--cor-2);
-  position: relative;
+/*Miscellaneous*/
   cursor: pointer;
 }
 
 .contato-mensagem button {
+/*Positioning stuff*/
   position: absolute;
-  background: url("./img/img-icones/copy.svg") no-repeat center center;
-  height: 35px;
-  width: 35px;
-  padding: 10px;
   right: 20px;
   top: 20px;
+/*Box model stuff*/
+  width: 35px;
+  height: 35px;
+  padding: 10px;
   border: none;
+  background: url("./img/img-icones/copy.svg") no-repeat center center;
+/*Miscellaneous*/
   cursor: pointer;
 }
 
 .contato-email {
-  position: relative;
+/*Display stuff*/
   display: flex;
   flex-direction: column;
+/*Positioning stuff*/
+  position: relative;
+/*Miscellaneous*/
   gap: 20px;
 }
 
 .contato-mensagem span {
-  font-size: 1.2em;
+/*Display stuff*/
   display: inline-block;
-  opacity: 0;
+/*Typography stuff*/
+  font-size: 1.2em;
+/*Manipulations stuff*/
   transition: opacity 0.3s ease-in-out;
+  opacity: 0;
 }
 
 .contato-mensagem span.active {
@@ -98,8 +127,10 @@
 }
 
 .contato-links {
+/*Display stuff*/
   display: flex;
   flex-direction: row;
+/*Miscellaneous*/
   gap: 15px;
 }
 
