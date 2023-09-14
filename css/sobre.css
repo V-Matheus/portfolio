@@ -92,7 +92,6 @@
 /*Miscellaneous*/
   float: right;
   clear: left;
-  visibility: visible;
 }
 
 .sobre-container li:nth-child(even)[data-anime="scroll"].ativo {
@@ -236,8 +235,9 @@
     transform: translate(-50%, -50%);
   }
 
-  .sobre-container li:nth-child(even)[data-anime="scroll"] {
-    transform: translateX(-140px);
+  .js .sobre-container li:nth-child(even)[data-anime="scroll"] {
+    transform: translateX(0);
+    
   }
 
   .js .sobre-container li:nth-child(even)[data-anime="scroll"].ativo {
