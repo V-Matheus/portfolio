@@ -1,40 +1,48 @@
 .sobre-grid {
+/*Display stuff*/
   display: grid;
-  place-items: center;
+/*Box model stuff*/
   padding-top: 60px;
   background: rgb(219, 218, 213);
-  background: linear-gradient(
-    180deg,
-    rgba(219, 218, 213, 1) 0%,
-    rgba(98, 132, 192, 1) 100%
-  );
+  background: linear-gradient(    180deg,    rgba(219, 218, 213, 1) 0%,    rgba(98, 132, 192, 1) 100%  );
+/*Miscellaneous*/
+  place-items: center;
 }
 
 .sobre-container {
+/*Positioning stuff*/
+  position: relative;
+/*Box model stuff*/
   width: 70%;
   height: auto;
-  position: relative;
 }
 
 .sobre-container::after {
-  position: absolute;
+/*Display stuff*/
   content: "";
+/*Positioning stuff*/
+  position: absolute;
+/*Box model stuff*/
   width: 2px;
   height: 100%;
   background: var(--cor-1);
 }
 
 .sobre-container li {
+/*Positioning stuff*/
+  position: relative;
+  z-index: 99;
+/*Box model stuff*/
   width: 50%;
   height: auto;
-  padding: 15px 20px;
-  background-color: var(--cor-2);
-  box-shadow: 1px 1px 25px #000;
-  border-radius: 10px;
   margin-bottom: 30px;
-  z-index: 99;
-  position: relative;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: var(--cor-2);
+/*Manipulations stuff*/
   opacity: 1;
+/*Miscellaneous*/
+  box-shadow: 1px 1px 25px #000;
 }
 
 .js .sobre-container li {
@@ -42,44 +50,57 @@
 }
 
 .js .sobre-container li:nth-child(odd)[data-anime="scroll"] {
+/*Typography stuff*/
+  text-align: right;
+/*Manipulations stuff*/
+  transform: translateX(-60px);
+/*Miscellaneous*/
   float: left;
   clear: right;
-  transform: translateX(-60px);
-  text-align: right;
 }
 
 .sobre-container li:nth-child(odd)[data-anime="scroll"] {
+/*Typography stuff*/
+  text-align: right;
+/*Manipulations stuff*/
+  transform: translateX(-30px);
+/*Miscellaneous*/
   float: left;
   clear: right;
-  transform: translateX(-30px);
-  text-align: right;
 }
 
 
 .sobre-container li:nth-child(odd)[data-anime="scroll"].ativo {
-  opacity: 1;
-  transition: 0.3s;
+/*Manipulations stuff*/
   transform: translateX(-30px);
+  transition: 0.3s;
+  opacity: 1;
 }
 
 .js .sobre-container li:nth-child(even)[data-anime="scroll"] {
+/*Manipulations stuff*/
+  transform: translateX(140px);
+/*Miscellaneous*/
   float: right;
   clear: left;
-  transform: translateX(140px);
   visibility: hidden;
 }
 
 .sobre-container li:nth-child(even)[data-anime="scroll"] {
+/*Manipulations stuff*/
+  transform: translateX(110px);
+/*Miscellaneous*/
   float: right;
   clear: left;
-  transform: translateX(110px);
   visibility: visible;
 }
 
 .sobre-container li:nth-child(even)[data-anime="scroll"].ativo {
-  opacity: 1;
-  transition: 0.3s;
+/*Manipulations stuff*/
   transform: translateX(110px);
+  transition: 0.3s;
+  opacity: 1;
+/*Miscellaneous*/
   visibility: visible;
 }
 
@@ -88,51 +109,66 @@
 }
 
 .sobre-container li .sobre-titulo {
-  font-size: 20px;
+/*Typography stuff*/
   font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 20px;
   font-weight: 600;
   color: var(--cor-1);
 }
 
 .sobre-container ul li p {
+/*Box model stuff*/
+  margin: 25px 0;
+/*Typography stuff*/
+  font-family: 'Noto Sans Georgian', 'Georgia', serif;
   font-size: 15px;
   color: #444;
-  margin: 25px 0;
+/*Miscellaneous*/
   line-height: 23px;
-  font-family: 'Noto Sans Georgian', 'Georgia', serif;
 }
 
 .sobre-container ul li .data {
+/*Display stuff*/
+  display: grid;
+/*Positioning stuff*/
   position: absolute;
   top: -40px;
-  background-color: var(--cor-1);
+/*Box model stuff*/
   width: 135px;
   height: 35px;
   border-radius: 20px;
-  color: #fff;
-  display: grid;
-  place-items: center;
+  background-color: var(--cor-1);
+/*Typography stuff*/
   font-size: 15px;
+  color: #fff;
+/*Miscellaneous*/
+  place-items: center;
 }
 
 .sobre-container li .circle {
-  width: 30px;
-  height: 30px;
-  background-color: var(--cor-2);
-  border-radius: 50%;
+/*Positioning stuff*/
   position: absolute;
   top: 0;
+/*Box model stuff*/
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--cor-2);
 }
 
 .sobre-container ul li .circle::after {
+/*Display stuff*/
   content: "";
+/*Positioning stuff*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+/*Box model stuff*/
   width: 15px;
   height: 15px;
-  background-color: var(--cor-1);
   border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  background-color: var(--cor-1);
+/*Manipulations stuff*/
   transform: translate(-50%, -50%);
 }
 
