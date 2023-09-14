@@ -1,18 +1,25 @@
 #habilidades {
+/*Display stuff*/
   display: grid;
-  text-align: center;
-  overflow: hidden;
+/*Box model stuff*/
+  padding: 60px;
   background: rgb(219, 218, 213);
   background: linear-gradient(180deg, rgba(98, 132, 192, 1), rgb(40, 53, 86));
-  padding: 60px;
+/*Typography stuff*/
+  text-align: center;
+/*Miscellaneous*/
+  overflow: hidden;
 }
 
 .habilidades-grid {
+/*Display stuff*/
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+/*Typography stuff*/
   font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
+/*Miscellaneous*/
+  grid-gap: 40px;
 }
 
 .habilidades-grid h2 {
@@ -20,73 +27,94 @@
 }
 
 .skills-container {
-  position: relative;
+/*Display stuff*/
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1000px;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+/*Positioning stuff*/
+  position: relative;
   z-index: 1;
+/*Box model stuff*/
+  max-width: 1000px;
 }
 
 .skills-container .card {
+/*Display stuff*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*Positioning stuff*/
   position: relative;
+/*Box model stuff*/
   width: 200px;
   height: 250px;
   margin: 15px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   background-color: var(--cor-2);
+/*Miscellaneous*/
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .skills-container .card::before {
+/*Display stuff*/
   content: "";
+/*Positioning stuff*/
+  position: absolute;
+/*Box model stuff*/
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 
 .skills-container .card:hover::before {
-  opacity: 0;
+/*Manipulations stuff*/
   transform: translateY(-100px);
   transition: 0.5s;
+  opacity: 0;
 }
 
 .skills-container .card .content {
+/*Box model stuff*/
   padding: 20px;
+/*Typography stuff*/
   text-align: center;
+/*Manipulations stuff*/
   transform: translateY(100px);
-  opacity: 0;
   transition: 0.5s;
+  opacity: 0;
 }
 
 .skills-container .card:hover .content {
+/*Typography stuff*/
   font-size: 12px;
+/*Manipulations stuff*/
   transform: translateY(0px);
   opacity: 1;
 }
 
 .skills-container .card .content h1 {
+/*Positioning stuff*/
   position: relative;
-  font-size: 1.8em;
-  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 600;
-  padding: 20px;
+/*Box model stuff*/
   margin-bottom: 10px;
-  pointer-events: none;
+  padding: 20px;
+/*Typography stuff*/
+  font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
   color: var(--cor-1);
+/*Miscellaneous*/
+  pointer-events: none;
 }
 
 .skills-container .card .content p {
+/*Typography stuff*/
+  font-family: 'Noto Sans Georgian', 'Georgia', serif;
   font-size: 1em;
   font-weight: 300;
-  font-family: 'Noto Sans Georgian', 'Georgia', serif;
 }
 
 .habilidades-atuais .skills-container .card:nth-child(1)::before {
