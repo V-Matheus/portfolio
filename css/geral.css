@@ -16,8 +16,10 @@ dd {
 }
 
 ul {
+/*Box model stuff*/
   margin: 0px;
   padding: 0px;
+/*Miscellaneous*/
   list-style: none;
 }
 
@@ -27,26 +29,34 @@ a {
 }
 
 img {
+/*Display stuff*/
+  display: block;
+/*Box model stuff*/
   max-width: 100%;
   height: auto;
-  display: block;
   border-radius: 15px;
 }
 
 .titulo {
-  padding: 50px;
-  margin-bottom: 50px;
+/*Positioning stuff*/
   position: relative;
+/*Box model stuff*/
+  margin-bottom: 50px;
+  padding: 50px;
+/*Typography stuff*/
   font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
 }
 
 .titulo::after {
-  position: absolute;
+/*Display stuff*/
   content: "";
-  width: 6%;
-  height: 3px;
+/*Positioning stuff*/
+  position: absolute;
   left: 47%;
   bottom: 40px;
+/*Box model stuff*/
+  width: 6%;
+  height: 3px;
   background-color: var(--cor-1);
 }
