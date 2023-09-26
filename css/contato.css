@@ -3,7 +3,6 @@
   display: grid;
 /*Box model stuff*/
   background: linear-gradient(180deg, rgb(40, 53, 86) 40%, rgb(30, 41, 74));
-  background: rgb(219, 218, 213);
 /*Typography stuff*/
   text-align: center;
   color: var(--cor-2);
