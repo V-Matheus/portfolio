@@ -60,3 +60,7 @@ img {
   height: 3px;
   background-color: var(--cor-1);
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
